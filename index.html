@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Game</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="titleSection">
+        <h1>{{title}}</h1>
+      </div>
+      <div class="imageSection" @click="damage==0?play(finalKick):play(kick)">
+        <img :src="damage==0?badImg:goodImg" alt="" @click="damageDown" />
+      </div>
+      <div class="damageSection">
+        <progress :value="damage" max="100"></progress>
+      </div>
+      <button @click="damage=100">I need more DISCOUNT!</button>
+    </div>
+
+    <script src="./vue.js "></script>
+    <script src="./app.js "></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+body {
+  background: #34495e;
+  color: #41b883;
+}
+
+#app {
+  text-align: center;
+}
+
+.imageSection {
+  width: auto;
+  height: 500px;
+}
+
+progress[value] {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25) inset;
+}
+
+progress::-webkit-progress-value {
+  background: #41b883;
+}
